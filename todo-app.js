@@ -100,6 +100,20 @@
         };
     } 
 
+    function getNewID(arr) {
+        let max = 0;
+        for (const item of arr) {
+            if (item.id > max) {
+                max = item.id
+            }
+        }
+        return max + 1;
+    }
+
+    function saveToLocalStorage(arr, keyName) {
+        localStorage.setItem(keyName, JSON.stringify(arr));
+    }
+
     function createTodoApp(container, title = 'Список дел', keyName, defaultArr = []) {
         const todoAppTitle = createAppTitle(title);                                
         const todoItemForm = createTodoItemForm();  

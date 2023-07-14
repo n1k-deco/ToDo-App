@@ -12,19 +12,7 @@
     <script defer src="todo-app.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            let defaultArr = [
-                {   
-                    id: 1,
-                    name: 'Купить хлеб',
-                    done: false
-                },
-                {
-                    id: 2,
-                    name: 'Выбросить мусор',
-                    done: true
-                }
-            ]
-            createTodoApp(document.querySelector('#todo-app'), 'Никита', 'my', defaultArr);
+            createTodoApp(document.querySelector('#todo-app'), 'Света', 'sveta');
         });
     </script>
 </head>
@@ -35,7 +23,7 @@
             <a class="nav-link" href="sveta.html">Дела Светы</a>
             <a class="nav-link" href="mafi.html">Дела Мафи</a>
         </nav>
-    </div>      
+    </div>
     <div id="todo-app" class="container"></div>
 </body>
 </html>
